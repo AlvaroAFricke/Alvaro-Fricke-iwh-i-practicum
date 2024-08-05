@@ -6,21 +6,6 @@ body {
     padding: 20px;
   }
   
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
   table {
     width: 100%;
     border-collapse: collapse;
@@ -48,18 +33,6 @@ body {
     text-align: center;
     color: #888;
     font-style: italic;
-  }
-  
-
-
-
-
-
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
   }
   
   form {

@@ -1,0 +1,35 @@
+//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
+
+doctype html
+html
+  head
+    title= `${title}`
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    button(onclick="addCompany") Add/Edit Company
+
+    table
+      thead
+        tr
+          th ID
+          th Name
+          th City
+          th AnualRevenue
+        tbody
+        if companies.length > 0
+          each company in companies
+            tr
+              td= company.id
+              td= company.properties.name
+              td= company.properties.city
+              td= company.properties.annualrevenue
+        else
+          tr
+            td(colspan="4") No companies available.
+
+    script.
+      function addOrEditCompany() {
+        // Aquí puedes agregar la lógica para agregar o editar una compañía
+        
+      }
